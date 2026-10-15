@@ -1,0 +1,136 @@
+{
+  "status": "success",
+  "batch": "batch_01",
+  "audited_invoices_count": 2,
+  "discrepancies_count": 1,
+  "total_discrepancy_usd": "196.92",
+  "discrepancies": [
+    {
+      "invoice_id": "TX-US-2032-5394",
+      "contract_id": "TBX-US-EXP-E60",
+      "carrier": "Tarrowby Express Inc.",
+      "shipper": "Quillmere Pharma Inc.",
+      "invoice_date": "2032-01-02",
+      "pickup_date": "2031-12-25",
+      "currency": "USD",
+      "fx_rate_applied": null,
+      "discrepancy_lines": [
+        {
+          "line_number": 1,
+          "description": "Air freight USE2-INE2",
+          "charge_type": "base_freight",
+          "billed_amount": "1612.29",
+          "expected_amount": "1448.41",
+          "discrepancy_amount": "163.88",
+          "currency": "USD",
+          "matched_rate": {
+            "kind": "rate_row",
+            "contract_id": "TBX-US-EXP-E60",
+            "origin": "USE2",
+            "destination": "INE2",
+            "lane": "USE2-INE2",
+            "charge_type": "base_freight",
+            "min_weight_kg": "100",
+            "max_weight_kg": "299.5",
+            "rate_per_kg": "6.01",
+            "flat_fee": null,
+            "percentage_rate": null,
+            "currency": "USD",
+            "effective_date": "2031-12-17",
+            "expiration_date": "2032-06-16",
+            "source": {
+              "doc": "batch_01/0002.eml#MSA-TBX-US-EXP-E60.pdf",
+              "page": 8,
+              "quote": "USE2-INE2 100-299.5 kg 6.01 6.16"
+            },
+            "authority": 1
+          },
+          "is_uncontracted_charge": false,
+          "evidence_source": {
+            "doc": "batch_01/0003.eml#TX-US-2032-5394.pdf",
+            "page": 1,
+            "quote": "1 TE56915687 2031-12-25 Air freight USE2-INE2 241 kg 6.69 1612.29"
+          },
+          "rate_source": {
+            "doc": "batch_01/0002.eml#MSA-TBX-US-EXP-E60.pdf",
+            "page": 8,
+            "quote": "USE2-INE2 100-299.5 kg 6.01 6.16"
+          },
+          "notes": "Contract rate 6.01 x weight 241 = 1448.41"
+        },
+        {
+          "line_number": 2,
+          "description": "Fuel surcharge USE2-INE2",
+          "charge_type": "fuel_surcharge",
+          "billed_amount": "325.04",
+          "expected_amount": "292.00",
+          "discrepancy_amount": "33.04",
+          "currency": "USD",
+          "matched_rate": {
+            "kind": "rate_row",
+            "contract_id": "TBX-US-EXP-E60",
+            "origin": null,
+            "destination": null,
+            "lane": null,
+            "charge_type": "fuel_surcharge",
+            "min_weight_kg": null,
+            "max_weight_kg": null,
+            "rate_per_kg": null,
+            "flat_fee": null,
+            "percentage_rate": "20.16",
+            "currency": "USD",
+            "effective_date": "2031-12-01",
+            "expiration_date": "2031-12-31",
+            "source": {
+              "doc": "batch_01/0002.eml#MSA-TBX-US-EXP-E60.pdf",
+              "page": 9,
+              "quote": "2031-12 20.16%"
+            },
+            "authority": 1
+          },
+          "is_uncontracted_charge": false,
+          "evidence_source": {
+            "doc": "batch_01/0003.eml#TX-US-2032-5394.pdf",
+            "page": 1,
+            "quote": "2 TE56915687 2031-12-25 Fuel surcharge USE2-INE2 1612.29 20.16% 325.04"
+          },
+          "rate_source": {
+            "doc": "batch_01/0002.eml#MSA-TBX-US-EXP-E60.pdf",
+            "page": 9,
+            "quote": "2031-12 20.16%"
+          },
+          "notes": "Contract percentage 20.16% x basis 1448.41 = 292.00"
+        }
+      ],
+      "total_discrepancy_native": "196.92",
+      "total_discrepancy_usd": "196.92",
+      "evidence": [
+        {
+          "doc": "batch_01/0003.eml#TX-US-2032-5394.pdf",
+          "page": 1,
+          "quote": "INVOICE TX-US-2032-5394\nInvoice date 2032-01-02 Due date 2032-02-16"
+        },
+        {
+          "doc": "batch_01/0003.eml#TX-US-2032-5394.pdf",
+          "page": 1,
+          "quote": "1 TE56915687 2031-12-25 Air freight USE2-INE2 241 kg 6.69 1612.29"
+        },
+        {
+          "doc": "batch_01/0002.eml#MSA-TBX-US-EXP-E60.pdf",
+          "page": 8,
+          "quote": "USE2-INE2 100-299.5 kg 6.01 6.16"
+        },
+        {
+          "doc": "batch_01/0003.eml#TX-US-2032-5394.pdf",
+          "page": 1,
+          "quote": "2 TE56915687 2031-12-25 Fuel surcharge USE2-INE2 1612.29 20.16% 325.04"
+        },
+        {
+          "doc": "batch_01/0002.eml#MSA-TBX-US-EXP-E60.pdf",
+          "page": 9,
+          "quote": "2031-12 20.16%"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "contracts": [],
+  "rate_rows": [],
+  "invoices": [],
+  "payments": [],
+  "tracking_events": [],
+  "waivers": [],
+  "cashback_rules": [],
+  "fx_rates": [],
+  "processed_doc_ids": [],
+  "feedback_decisions": {}
+}

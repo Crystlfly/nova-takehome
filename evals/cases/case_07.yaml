@@ -1,0 +1,11 @@
+name: late fee owed because payment exceeded grace period after extension
+mailbox: data/examples/late_fees/docs
+as_of: '2033-02-28'
+mode: supervised
+expect:
+  key:
+    invoice_id: TX-US-2033-5582
+    class: late_fee_not_owed
+  verdict: no_finding
+  action: none
+why: see data/examples/late_fees/EXPLANATION.md

@@ -1,0 +1,97 @@
+{
+ "harness": "harness/harness.py",
+ "passed": 4,
+ "total": 12,
+ "your_cases": 10,
+ "score": 0.3333,
+ "cases": [
+  {
+   "case": "case_01.yaml",
+   "name": "duplicate invoice resend after payment",
+   "pass": false,
+   "diff": [
+    "key missing from the report"
+   ]
+  },
+  {
+   "case": "case_02.yaml",
+   "name": "split shipment decoy not a duplicate",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "case_03.yaml",
+   "name": "security charge rebilled four months later under alias",
+   "pass": false,
+   "diff": [
+    "key missing from the report"
+   ]
+  },
+  {
+   "case": "case_04.yaml",
+   "name": "authorized written waiver ignored by billing",
+   "pass": false,
+   "diff": [
+    "key missing from the report"
+   ]
+  },
+  {
+   "case": "case_05.yaml",
+   "name": "waiver naming different shipment is not applicable",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "case_06.yaml",
+   "name": "late fee billed despite timely payment under written extension",
+   "pass": false,
+   "diff": [
+    "key missing from the report"
+   ]
+  },
+  {
+   "case": "case_07.yaml",
+   "name": "late fee owed because payment exceeded grace period after extension",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "case_08.yaml",
+   "name": "volume rebate credit earned under quarterly threshold",
+   "pass": false,
+   "diff": [
+    "key missing from the report"
+   ]
+  },
+  {
+   "case": "case_09.yaml",
+   "name": "qualifying spend did not reach rebate threshold",
+   "pass": true,
+   "diff": []
+  },
+  {
+   "case": "case_10.yaml",
+   "name": "fuel surcharge schedule missing preventing calculation",
+   "pass": false,
+   "diff": [
+    "key missing from the report"
+   ]
+  },
+  {
+   "case": "sample_conflict.yaml",
+   "name": "amendment and rate notice disagree",
+   "pass": false,
+   "diff": [
+    "key missing from the report"
+   ]
+  },
+  {
+   "case": "sample_overcharge.yaml",
+   "name": "wrong rate on one freight line",
+   "pass": false,
+   "diff": [
+    "key missing from the report"
+   ]
+  }
+ ]
+}

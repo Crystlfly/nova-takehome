@@ -1,0 +1,10 @@
+{
+ "as_of": "2031-02-28",
+ "mode": "supervised",
+ "findings": [],
+ "portfolio": {
+  "cashback": [],
+  "expiry": [],
+  "late_fee_risk": []
+ }
+}

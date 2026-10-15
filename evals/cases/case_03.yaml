@@ -1,0 +1,12 @@
+name: security charge rebilled four months later under alias
+mailbox: data/examples/duplicate_rebilled_4_months/docs
+as_of: '2032-08-31'
+mode: supervised
+expect:
+  key:
+    invoice_id: TX-US-2032-5441
+    class: duplicate
+  verdict: finding
+  amount_usd: '42.08'
+  action: draft:dispute
+why: see data/examples/duplicate_rebilled_4_months/EXPLANATION.md

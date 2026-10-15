@@ -1,0 +1,16 @@
+name: fuel surcharge schedule missing preventing calculation
+mailbox: evals/mailboxes/missing_doc
+as_of: '2032-11-30'
+mode: supervised
+expect:
+  key:
+    invoice_id: TX-US-2032-5166
+    class: overcharge
+  verdict: cannot_determine
+  action: draft:request_document
+  missing_doc:
+    name: Annex D fuel surcharge schedule
+    holder:
+      party: TBX-US
+  deadline: null
+why: The fuel surcharge schedule referenced for billing is missing from the contract repository preventing rate audit calculation.
